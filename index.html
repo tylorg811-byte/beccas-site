@@ -9,19 +9,27 @@
 {margin:0;padding:0;box-sizing:border-box}
 
 body{
-font-family:-apple-system, BlinkMacSystemFont, sans-serif;
-background:#fdf7f9;
+font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+background:#fff;
 color:#222;
 }
 
 / HEADER /
 .header{
+position:fixed;
+top:0;
+width:100%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:20px;
-background:white;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
+padding:15px 20px;
+background:rgba(255,255,255,0.85);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.header h2{
+font-size:18px;
 }
 
 nav{
@@ -37,27 +45,30 @@ font-weight:500;
 
 / HERO /
 .hero{
-height:90vh;
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 color:white;
 background:linear-gradient(135deg,#b76e79,#eac6cb);
+padding:20px;
 }
 
 .hero h1{
 font-size:42px;
+margin-bottom:10px;
 }
 
 .hero p{
-margin:15px 0;
+margin-bottom:20px;
+opacity:0.9;
 }
 
 / BUTTON /
 .btn{
 display:inline-block;
-padding:12px 25px;
+padding:14px 30px;
 background:white;
 color:#b76e79;
 border-radius:30px;
@@ -67,20 +78,28 @@ font-weight:bold;
 
 / SECTION /
 .section{
-padding:60px 20px;
+padding:80px 20px;
 }
 
+.section h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+/ GRID /
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
 }
 
+/ CARD /
 .card{
 background:white;
-padding:25px;
+padding:30px;
 border-radius:15px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
+text-align:center;
 }
 
 / FOOTER */
@@ -89,53 +108,6 @@ text-align:center;
 padding:20px;
 background:#111;
 color:white;
-}
-
-  /* HERO FIX /
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(135deg, #b76e79, #eac6cb);
-  color: white;
-  padding: 20px;
-}
-
-/ BIG TITLE /
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-/ SUBTEXT /
-.hero p {
-  margin-bottom: 20px;
-  opacity: 0.9;
-}
-
-/ BUTTON FIX /
-.btn {
-  display: inline-block;
-  padding: 14px 30px;
-  background: white;
-  color: #b76e79;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/ CENTER SERVICES /
-.section h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/ CARDS UPGRADE */
-.card {
-  text-align: center;
-  font-weight: 500;
 }
 </style>
 
@@ -157,7 +129,7 @@ color:white;
   <div>
     <h1>Luxury Floral Design</h1>
     <p>Weddings • Events • Custom Arrangements</p>
-    <a class="btn">Book Now</a>
+    <a href="#" class="btn">Book Now</a>
   </div>
 </section>
 
