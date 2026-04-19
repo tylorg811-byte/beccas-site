@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Becca's Custom Creations</title>
+
+<style>
+{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:-apple-system, BlinkMacSystemFont, sans-serif;
+background:#fdf7f9;
+color:#222;
+}
+
+/ HEADER /
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+background:white;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+nav{
+display:flex;
+gap:15px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/ HERO /
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+background:linear-gradient(135deg,#b76e79,#eac6cb);
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero p{
+margin:15px 0;
+}
+
+/ BUTTON /
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:white;
+color:#b76e79;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/ SECTION /
+.section{
+padding:60px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/ FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+  <h2>Becca's Custom Creations</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Book</a>
+    <a href="#">Gallery</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Luxury Floral Design</h1>
+    <p>Weddings • Events • Custom Arrangements</p>
+    <a class="btn">Book Now</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">Wedding Floral Design</div>
+    <div class="card">Funeral Arrangements</div>
+    <div class="card">Custom Events</div>
+  </div>
+</section>
+
+<footer>© 2026 Becca's Custom Creations</footer>
+
+</body>
+</html>
